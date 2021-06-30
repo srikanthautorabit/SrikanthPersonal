@@ -1,0 +1,32 @@
+<aura:component >
+	<aura:attribute name="Item" type="Camping_Item__c"  default="{'sobjectType':'Camping_Item__c', 'Name':'test','Packed__c':'false'}"/>
+  <!--  <lightning:recordViewForm recordId="a0J0I00000O3pcoUAB" objectApiName="Camping_Item__c">
+    <lightning:outputField fieldName="Name" />
+         </lightning:recordViewForm>-->
+        
+    <ui:outputText value="{!v.Item.Name}" />
+    <ui:outputText value="{!!v.Item.Price__c}" />
+    <ui:outputText value="{!v.Item.Quantity__c}" />
+    <ui:outputText value="{!v.Item.Packed__c}" />
+
+ 
+    <p>Price:
+        <lightning:formattedNumber value="{!v.Item.Price__c}" style="currency"/>
+    </p>
+	<p>Quantity:
+        <lightning:formattedNumber value="{!v.Item.Quantity__c}" style="Number"/>
+    </p>
+
+    <p>Packed?:
+        <ui:outputCheckbox value="{!v.Item.Packed__c}" /> 
+    </p>
+     
+   
+     <div>
+        <lightning:button label="Packed!"
+            onclick="{!c.packItem}"/>
+ 
+        
+    </div>
+       
+</aura:component>

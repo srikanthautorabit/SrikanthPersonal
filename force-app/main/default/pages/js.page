@@ -1,0 +1,33 @@
+<apex:page >
+    <apex:form >
+  <apex:pageBlock >
+      <apex:pageBlockSection >
+      <apex:inputtext id="b0" />
+<apex:inputtext id="b1" />
+
+
+<apex:outputLink value="javascript: addressCopy('{!$Component.b0}', '{!$Component.b1}', '{!$Component.b2}', '{!$Component.b3}', '{!$Component.b4}', '{!$Component.s0}', '{!$Component.s1}', '{!$Component.s2}', '{!$Component.s3}', '{!$Component.s4}')">Copy Billing Address to Shipping Address</apex:outputLink>
+
+
+<apex:inputtext id="s0" />
+<apex:inputtext id="s1" />
+
+
+
+<script type="text/javascript">
+function addressCopy(b0, b1, b2, b3, b4, s0, s1, s2, s3, s4) {
+   
+    // Copy billing fields to shipping fields
+    document.getElementById(s0).value = document.getElementById(b0).value + document.getElementById(b1).value ;
+    document.getElementById(s1).value = document.getElementById(b1).value + document.getElementById(b0).value;
+    document.getElementById(s2).value = document.getElementById(b2).value;
+    document.getElementById(s3).value = document.getElementById(b3).value;
+    document.getElementById(s4).value = document.getElementById(b4).value;
+    
+    
+}
+</script>
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

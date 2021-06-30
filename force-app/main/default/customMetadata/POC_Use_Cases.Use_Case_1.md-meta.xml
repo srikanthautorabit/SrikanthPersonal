@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Use Case 1</label>
+    <protected>false</protected>
+    <values>
+        <field>Problem_Statement__c</field>
+        <value xsi:type="xsd:string">Sync your Salesforce box with Version Control on metadata changes, including deletions</value>
+    </values>
+    <values>
+        <field>Use_Cases_in_AutoRABIT__c</field>
+        <value xsi:type="xsd:string">1. Recurrent metadata check-ins  
+2. Validate/Test a user story prior to a push
+3. Constructive and Destructive changes can be packaged into one commit
+4. Code quality check</value>
+    </values>
+</CustomMetadata>

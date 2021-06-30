@@ -1,0 +1,10 @@
+<apex:page controller="LastSeenTime">
+  <apex:form >
+      <apex:pageBlock >
+          <apex:pageBlockButtons >
+              <apex:commandButton value="Last Seen" action="{!lastseen}"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock>
+      
+  </apex:form>
+</apex:page>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AutoRABIT POC</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AutoRABIT POCs</value>
+    </caseValues>
+    <layouts>
+        <layout>AutoRABIT POC Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vault POC Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- AutoRABIT --></label>
+        <name>AutoRABIT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vaultt --></label>
+        <name>Vaultt</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can only select max 3 use cases for a problem statement --></errorMessage>
+        <name>Can_select_only_upto_3_values_Use_Cases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only select max 3 use cases for a problem statement --></errorMessage>
+        <name>Can_select_only_upto_3_values_Use_Cases1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only select max 3 use cases for a problem statement --></errorMessage>
+        <name>Can_select_only_upto_3_values_Use_Cases2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Name --></errorMessage>
+        <name>Name_is_mandatory</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Use Cases in Vault --></label>
+    <name>Use_Cases_in_Vault_3__c</name>
+    <picklistValues>
+        <masterLabel>Apply Retention Periods on Backup/Archival</masterLabel>
+        <translation><!-- Apply Retention Periods on Backup/Archival --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Backup only specific records important to your organization</masterLabel>
+        <translation><!-- Backup only specific records important to your organization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Backup records into a storage service and also, delete it from Salesforce upon user confirmation</masterLabel>
+        <translation><!-- Backup records into a storage service and also, delete it from Salesforce upon user confirmation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compare Metadata/Data between a backup snapshot and live environment</masterLabel>
+        <translation><!-- Compare Metadata/Data between a backup snapshot and live environment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compare Metadata/Data between two backup snapshots</masterLabel>
+        <translation><!-- Compare Metadata/Data between two backup snapshots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create templates that can backup metadata and data with dependencies</masterLabel>
+        <translation><!-- Create templates that can backup metadata and data with dependencies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exclude Deleted Data in Salesforce from being backed up</masterLabel>
+        <translation><!-- Exclude Deleted Data in Salesforce from being backed up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Include unlimited hierarchical dependencies of data to be restored</masterLabel>
+        <translation><!-- Include unlimited hierarchical dependencies of data to be restored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Input a CSV or collection of record IDs to anonymize records from backup snapshot(s)</masterLabel>
+        <translation><!-- Input a CSV or collection of record IDs to anonymize records from backup snapshot(s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mask sensitive information prior to your data deployment</masterLabel>
+        <translation><!-- Mask sensitive information prior to your data deployment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Migrate data and metadata with dependencies across multiple levels</masterLabel>
+        <translation><!-- Migrate data and metadata with dependencies across multiple levels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optimize API calls during every backup</masterLabel>
+        <translation><!-- Optimize API calls during every backup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recover metadata/data selectively from a backup snapshot</masterLabel>
+        <translation><!-- Recover metadata/data selectively from a backup snapshot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recover the entire metadata/data from a backup snapshot</masterLabel>
+        <translation><!-- Recover the entire metadata/data from a backup snapshot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restore records from archives with dependencies</masterLabel>
+        <translation><!-- Restore records from archives with dependencies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Run an incremental/full backup of your Salesforce Org</masterLabel>
+        <translation><!-- Run an incremental/full backup of your Salesforce Org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schedule backups that can be run more than once a day</masterLabel>
+        <translation><!-- Schedule backups that can be run more than once a day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seed metadata and data at once from a backup snapshot to a Salesforce environment</masterLabel>
+        <translation><!-- Seed metadata and data at once from a backup snapshot to a Salesforce environment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Set up Alert Rules in Vault to intelligently capture any real-time changes in metadata/data</masterLabel>
+        <translation><!-- Set up Alert Rules in Vault to intelligently capture any real-time changes in metadata/data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Set up Incremental/Full Backup on Data/Metadata</masterLabel>
+        <translation><!-- Set up Incremental/Full Backup on Data/Metadata --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

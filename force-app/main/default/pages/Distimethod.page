@@ -1,0 +1,99 @@
+<apex:page sidebar="false"    showHeader="false" controller="disticontroller"  >
+
+    <apex:form >
+    <apex:messages />
+    
+        <apex:pageBlock title="Distribution Form">
+        
+        <apex:pageBlockSection id="Email">
+                   
+                        <apex:InputText label="Email"  value="{!email}" />
+                        
+                         
+                    </apex:pageBlockSection>
+            <apex:pageblockSection >
+                <apex:selectList label="Distribution Method" size="1" multiselect="false" value="{!DIsti}"  >
+                            <apex:selectOptions value="{!Distribution}"  />
+                             
+                </apex:selectList><br/>
+                        
+                        <apex:selectList label="Format" size="1" multiselect="false" value="{!Formatfield}"  >
+                            <apex:selectOptions value="{!Format}"  />
+                                <apex:actionSupport event="onchange" reRender="Addvalue1,Addvalue2"  status="pageStatus"></apex:actionSupport>
+                        </apex:selectList>
+            </apex:pageblockSection>
+             
+                    <apex:pageBlockSection id="Addvalue1">
+                   
+                         <apex:selectList label="Add on #1" size="1" multiselect="false" value="{!Addonfield}" rendered="{!(Formatfield == 'Basic' || Formatfield == 'Image' || Formatfield == 'Big 4' )}" >
+                            <apex:selectOptions value="{!Addon1values}"  />
+                                <apex:actionSupport event="onchange" reRender="yesvalue1"  status="pageStatus"></apex:actionSupport>
+                        </apex:selectList>
+                         
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="yesvalue1">
+                   
+                         <apex:selectList label="Yes" size="1" multiselect="false" value="{!Yes1}" rendered="{!(Addonfield=='Yes' && Formatfield != 'None')}" >
+                            <apex:selectOptions value="{!Yes1values}"  />
+                                
+                        </apex:selectList>
+                         
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection id="Addvalue2">
+                   
+                         <apex:selectList label="Add on #2" size="1" multiselect="false" value="{!Addonfield2}" rendered="{!(Formatfield == 'Basic' || Formatfield == 'Image' || Formatfield == 'Big 4' )}" >
+                            <apex:selectOptions value="{!Addon1values}"  />
+                                <apex:actionSupport event="onchange" reRender="yesvalue2"  status="pageStatus"></apex:actionSupport>
+                        </apex:selectList>
+                         
+                    </apex:pageBlockSection>
+         
+                   <apex:pageBlockSection id="yesvalue2">
+                   
+                         <apex:selectList label="Yes2" size="1" multiselect="false" value="{!Yes2}" rendered="{!Addonfield2=='Yes'}" >
+                            <apex:selectOptions value="{!Yes2values}"  />
+                                
+                        </apex:selectList>
+                         
+                    </apex:pageBlockSection>
+           
+                    
+                <apex:pageBlockSection id="RPDM">
+                   
+                         <apex:selectList label="Is RPDM Included" size="1" multiselect="false" value="{!RDPM}"  >
+                            <apex:selectOptions value="{!RDPMvalues}"  />
+                                <apex:actionSupport event="onchange" reRender="Impression"  status="pageStatus"></apex:actionSupport>
+                        </apex:selectList>
+                         
+                    </apex:pageBlockSection>
+           
+                    <apex:pageBlockSection id="Impression">
+                   
+                        <apex:InputText label="Impression" value="{!Impression}" rendered="{!RDPM=='Yes'}" />
+                        <apex:InputText label="Rate" value="{!Rate}" rendered="{!RDPM=='Yes'}" />
+                         
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="Storevalues">
+                   
+                         <apex:selectList label="Is StoreCopy Included" size="1" multiselect="false" value="{!Store}"  >
+                            <apex:selectOptions value="{!Storevalues}"  />
+                                <apex:actionSupport event="onchange" reRender="Address"  status="pageStatus"></apex:actionSupport>
+                        </apex:selectList>
+                         
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection id="Address">
+                   
+                        <apex:InputText label="Address" value="{!Address}" rendered="{!Store=='Yes'}" />
+                        <apex:InputText label="Quantity" value="{!Quantity}" rendered="{!Store=='Yes'}" />
+                         
+                    </apex:pageBlockSection>
+                    <apex:pageBlockButtons location="bottom" >
+                        <apex:commandButton value="Submit" action="{!submit}" />
+                    </apex:pageBlockButtons>
+              </apex:pageBlock>
+    </apex:form>
+    
+    
+</apex:page>

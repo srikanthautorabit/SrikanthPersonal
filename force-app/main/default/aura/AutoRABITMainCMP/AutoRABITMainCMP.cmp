@@ -1,0 +1,95 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<!--<aura:attribute name="fields" type="String[]" default="['Custmer_Name__c','Abridged_Problem_Statement__c','Use_Cases_in_AutoRABIT__c','Abridged_Problem_Statement1__c','Use_Cases_in_AutoRABIT1__c','Abridged_Problem_Statement2__c','Use_Cases_in_AutoRABIT2__c']" />
+    <aura:attribute name="Intfields" type="String[]" default="['Version_Control_system__c','ALM_System__c','Static_code_Analysis__c','nCino_Vlocity__c','Test_Automation_Factory__c']" />
+    -->    
+    <aura:attribute name="recordId" type="String"/>
+    
+    <aura:attribute name="NewPS" type="AutoRABIT_POC__c"
+         default="{ 'sobjectType': 'AutoRABIT_POC__c',
+                        'Abridged_Problem_Statement__c': '',
+                        'Use_Cases_in_AutoRABIT__c': '',
+                  		'Custmer_Name__c':'',
+                  		'Abridged_Problem_Statement1__c':'',
+                  		'Use_Cases_in_AutoRABIT1__c':'',
+                  		'Abridged_Problem_Statement2__c':'',
+                  		'Use_Cases_in_AutoRABIT2__c':'',
+                  		'Version_Control_system__c':'',
+                  		'ALM_System__c':'',
+                  		'Static_code_Analysis__c':'',
+                  		'nCino_Vlocity__c':'',
+                  		'Test_Automation_Factory__c':''}"/>
+    <lightning:layout multipleRows="true">
+       <lightning:layoutItem size="12">
+           <div class="slds-col slds-size_1-of-1" >
+    			<span>
+                <div class="slds-box slds-var-m-around_xxx-small" >
+              <p><img src="{!$Resource.AutoRABITPOC}" width="200" height="10"/></p>
+                   
+                </div>
+        		</span>
+  			</div> 
+        </lightning:layoutItem>
+        <lightning:layoutItem size="12">
+            <div class="slds-grid slds-gutters">
+              <div class="slds-col slds-size_3-of-4" >
+             <lightning:recordEditForm objectApiName="AutoRABIT_POC__c" aura:id="accForm" onload="{!c.handleLoad}"
+            onsubmit="{!c.handleSubmit}"
+            onsuccess="{!c.handleSuccess}">
+    		    <span>
+               <div class="slds-text-heading_large slds-text-align_Right slds-text-color_destructive">
+                            Problem Statements:</div>
+                
+                   <lightning:inputField  fieldName="Custmer_Name__c" />
+               		<lightning:inputField  fieldName="Abridged_Problem_Statement__c" />
+               		<lightning:inputField  fieldName="Use_Cases_in_AutoRABIT__c" />
+                   <lightning:inputField  fieldName="Abridged_Problem_Statement1__c" />
+               		<lightning:inputField  fieldName="Use_Cases_in_AutoRABIT1__c" />
+                   <lightning:inputField  fieldName="Abridged_Problem_Statement2__c" />
+               		<lightning:inputField  fieldName="Use_Cases_in_AutoRABIT2__c" />
+               		
+    			
+                 </span>
+                 <div class="slds-float_right">
+            <lightning:button  variant="brand" type="submit" name="save" label="Save" />
+                </div>
+                 </lightning:recordEditForm>
+             </div>
+             
+                     <div class="slds-col slds-size_1-of-4" >
+             <lightning:recordEditForm  objectApiName="AutoRABIT_POC__c" aura:id="accForm" onload="{!c.handleLoad}"
+            onsubmit="{!c.handleSubmit}"
+            onsuccess="{!c.handleSuccess}">
+                
+                  <span>
+                
+               <div class="slds-text-heading_Medium slds-text-align_Right slds-text-color_destructive">
+                            Integrations you would like to see as part of POC?</div>
+                
+              
+                   <lightning:inputField  fieldName="Version_Control_system__c" />
+               		<lightning:inputField  fieldName="ALM_System__c" />
+               		<lightning:inputField  fieldName="Static_code_Analysis__c" />
+                   
+                   <lightning:inputField  fieldName="nCino_Vlocity__c" />
+               		<lightning:inputField  fieldName="Test_Automation_Factory__c" />
+                  
+    			
+                    
+                 </span>
+                  
+                 </lightning:recordEditForm>
+                  
+                     </div>
+                  
+            </div>
+             <div class="slds-float_right">
+            <lightning:button  variant="brand" type="submit" name="save" label="Save" />
+                </div>
+            </lightning:layoutItem>
+         
+       
+
+          
+    </lightning:layout> 
+    
+</aura:component>

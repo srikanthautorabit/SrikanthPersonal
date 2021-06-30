@@ -1,0 +1,40 @@
+<apex:page controller="PICK" sidebar="false">
+   
+    <apex:form >
+       <apex:pageBlock >
+        <apex:pageBlockSection columns="2">
+            
+                <apex:outputLabel value="Country"/>  
+                 <apex:selectList size="1" value="{!Country}" id="con"> 
+                    <apex:selectOptions value="{!Countries}"/> 
+                    <apex:actionSupport event="onchange" reRender="a"/>
+                </apex:selectList>               
+                 <apex:outputLabel value="State"/>
+                 
+                <apex:selectList size="1" value="{!State}" id="a">
+                    <apex:selectOptions value="{!states}"/> 
+                </apex:selectList>
+                <Apex:outputText >CHECK</Apex:outputText>
+                <apex:inputCheckbox value="{!check}" id="chk"/>
+                
+                <Apex:outputText >COMMENTS</Apex:outputText>
+                <apex:inputTextarea value="{!comments}" id="cc"/> 
+                <Apex:outputText >DESCRIPTION</Apex:outputText>
+                <apex:inputTextarea value="{!description}" id="d"  />
+                
+                <apex:commandButton action="{!save}" value="submit" onClick="hide()"/>
+                <script>
+                   function hide(){
+                      document.getElementById("d").disabled = true;
+  
+                       }
+              </script>
+               
+            
+        </apex:pageBlockSection>       
+    </apex:pageBlock>
+    
+
+    </apex:form>
+
+</apex:page>

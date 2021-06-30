@@ -1,0 +1,160 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="disabled" type="Boolean" default="true" />
+    <aura:attribute name="disabledMain" type="Boolean" default="false" />
+    <aura:attribute name="enableSuccess" type="Boolean" default="false" />
+    <aura:attribute name="saved" type="Boolean" default="false" />
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="firstQuestion1" type="Boolean" default="false" />
+    <aura:attribute name="firstQuestion2" type="Boolean" default="false" />
+    <aura:attribute name="firstQuestion3" type="Boolean" default="false" />
+    <aura:attribute name="firstQuestion4" type="Boolean" default="false" />
+    <aura:attribute name="secondQuestion1" type="Boolean" default="false" />
+     <aura:attribute name="secondQuestion2" type="Boolean" default="false" />
+     <aura:attribute name="secondQuestion3" type="Boolean" default="false" />
+     <aura:attribute name="secondQuestion4" type="Boolean" default="false" />
+     <aura:attribute name="ThirdQuestion1" type="Boolean" default="false" />
+     <aura:attribute name="ThirdQuestion2" type="Boolean" default="false" />
+     <aura:attribute name="ThirdQuestion3" type="Boolean" default="false" />
+     <aura:attribute name="ThirdQuestion4" type="Boolean" default="false" />
+    
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if> 
+    <div class="slds-box ">
+   <!-- <lightning:layout multipleRows="true" >
+       <lightning:layoutItem size="12">
+           <div class="slds-col slds-size_1-of-1" >
+    			<span>
+                <div class="slds-box slds-var-m-around_xxx-small" >
+              <p><img src="{!$Resource.AutoRABITPOC}" width="200" height="10"/></p>
+                   
+                </div>
+        		</span>
+  			</div> 
+        </lightning:layoutItem>
+    </lightning:layout>-->
+       
+         <aura:if isTrue="{!v.disabled}" >
+        <lightning:layout>
+           
+            <lightning:layoutItem size="12">
+                 <div class="slds-box ">
+                		<!--<c:ARMPOCUseCases/>-->
+                    	<c:VaultPOCUseCases/>
+                </div>
+                 <div class="slds-float_right">
+            <lightning:button variant="brand" type="button" name="Next" label="Next" onclick="{!c.ClickNext}" />
+            </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+        </aura:if>
+        
+    <aura:if isTrue="{!v.disabledMain}" >
+    <aura:if isTrue="{!!v.saved}">
+    
+    <div class="slds-m-around_xx-large">
+        <lightning:recordEditForm objectApiName="AutoRABIT_POC__c" aura:id="pocForm" onload="{!c.handleLoad}"  onsubmit="{!c.handleSubmit}"
+            onsuccess="{!c.handleSuccess}">
+            <lightning:layout multipleRows="true">
+                
+			<!--	<lightning:layoutItem size="12">
+                     <lightning:messages />
+                </lightning:layoutItem>-->
+			<lightning:layoutItem size="1">
+                    
+                </lightning:layoutItem>
+                <lightning:layoutItem size="10">
+            <span>
+                <div class="slds-box ">
+               <div class="slds-text-heading_large slds-text-align_Right slds-text-color_destructive">
+                            Problem Statements:</div>
+                    <lightning:inputField  fieldName="Custmer_Name__c" required="true" />
+               		<lightning:inputField  fieldName="Vault_Problem_Statement_1__c" onchange="{!c.handleChange}" aura:id="selectItem1" />
+               		<lightning:inputField  fieldName="Use_Cases_in_Vault_1__c" />
+                    <aura:if isTrue="{!v.firstQuestion1}">
+                      <lightning:outputField fieldName="output1__c" />
+                    <lightning:inputField  fieldName="Comments1__c" />
+                    </aura:if>
+                    <aura:if isTrue="{!v.firstQuestion2}">
+                      <lightning:outputField fieldName="output2__c" />
+                    <lightning:inputField  fieldName="Comments2__c" />
+                    </aura:if>
+                    <aura:if isTrue="{!v.firstQuestion3}">
+                      <lightning:outputField fieldName="output3__c" />
+                    <lightning:inputField  fieldName="Comments3__c" />
+                    </aura:if>
+                    <aura:if isTrue="{!v.firstQuestion4}">
+                      <lightning:outputField fieldName="output4__c" />
+                    <lightning:inputField  fieldName="Comments4__c" />
+                    </aura:if>
+                    <lightning:inputField  fieldName="Vault_Problem_Statement_2__c" onchange="{!c.handleChange}" aura:id="selectItem2" />
+               		<lightning:inputField  fieldName="Use_Cases_in_Vault_2__c" />
+                     <aura:if isTrue="{!v.secondQuestion1}">
+                      <lightning:outputField fieldName="output1__c" />
+                    <lightning:inputField  fieldName="Comments1__c" />
+                    </aura:if>
+                    <aura:if isTrue="{!v.secondQuestion2}">
+                      <lightning:outputField fieldName="output2__c" />
+                    <lightning:inputField  fieldName="Comments2__c" />
+                    </aura:if>
+                     <aura:if isTrue="{!v.secondQuestion3}">
+                      <lightning:outputField fieldName="output3__c" />
+                    <lightning:inputField  fieldName="Comments3__c" />
+                    </aura:if>
+                     <aura:if isTrue="{!v.secondQuestion4}">
+                      <lightning:outputField fieldName="output4__c" />
+                    <lightning:inputField  fieldName="Comments4__c" />
+                    </aura:if>
+                   <lightning:inputField  fieldName="Vault_Problem_Statement_3__c" onchange="{!c.handleChange}" aura:id="selectItem3" />
+               		<lightning:inputField  fieldName="Use_Cases_in_Vault_3__c" />
+                     <aura:if isTrue="{!v.ThirdQuestion1}">
+                      <lightning:outputField fieldName="output1__c" />
+                    <lightning:inputField  fieldName="Comments1__c" />
+                    </aura:if>
+                    <aura:if isTrue="{!v.ThirdQuestion2}">
+                      <lightning:outputField fieldName="output2__c" />
+                    <lightning:inputField  fieldName="Comments2__c" />
+                    </aura:if>
+                     <aura:if isTrue="{!v.ThirdQuestion3}">
+                      <lightning:outputField fieldName="output3__c" />
+                    <lightning:inputField  fieldName="Comments3__c" />
+                    </aura:if>
+                     <aura:if isTrue="{!v.ThirdQuestion4}">
+                      <lightning:outputField fieldName="output4__c" />
+                    <lightning:inputField  fieldName="Comments4__c" />
+                    </aura:if>
+                </div>			
+            </span>
+               
+                </lightning:layoutItem>
+                
+              
+                
+            </lightning:layout><br/>
+            <div class="slds-float_right slds-p-right_xx-small">
+            <lightning:button variant="brand" type="button" name="Save" label="Submit" onclick="{!c.handlePOC}" />
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="slds-float_right slds-p-right_xx-small">
+            <lightning:button variant="brand" type="button" name="Clear" label="Back" onclick="{!c.Clear}" />
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="slds-float_right slds-p-right_xx-small">
+            <lightning:button variant="brand" type="button" name="Cancel" label="Cancel" onclick="{!c.Cancel}" />
+            </div>
+        </lightning:recordEditForm>
+        </div>
+        <aura:set attribute="else">
+        <div class="slds-text-heading_large slds-text-align_center slds-text-color_success slds-box">
+                            Record saved succesfully Thankyou!!</div>
+    </aura:set>
+       
+    </aura:if>
+        
+        </aura:if>
+        
+        
+       <!--  <aura:if isTrue="{!v.enableSuccess}">
+             <div class="slds-text-heading_large slds-text-align_center slds-text-color_success slds-box">
+                            Record saved succesfully Thankyou!!</div>
+        </aura:if>-->
+    </div>   
+</aura:component>

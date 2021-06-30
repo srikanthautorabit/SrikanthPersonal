@@ -1,0 +1,14 @@
+<apex:page controller="myclass" sidebar="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageblockSection columns="1" >
+                <apex:inputField value="{!PC.COUNTRY__c}"/>
+                <apex:inputField value="{!PC.STATES__c}"/>
+                <apex:inputField value="{!PC.CHECK__c}"/>
+                <apex:InputField value="{!PC.DESCRIPTION__c}"  />
+                <apex:inputField value="{!PC.COMMENTS__c}"/>
+            </apex:pageblockSection>
+        <Apex:commandButton value="Save" action="{!Save}"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- STATE --></label>
+    <name>STATE__c</name>
+    <picklistValues>
+        <masterLabel>ANDHRAPRADES</masterLabel>
+        <translation><!-- ANDHRAPRADES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KARNATAKA</masterLabel>
+        <translation><!-- KARNATAKA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TELANGANA</masterLabel>
+        <translation><!-- TELANGANA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

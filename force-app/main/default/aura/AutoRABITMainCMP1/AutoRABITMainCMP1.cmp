@@ -1,0 +1,104 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="disabled" type="Boolean" default="true" />
+    <aura:attribute name="disabledMain" type="Boolean" default="false" />
+    <aura:attribute name="enableSuccess" type="Boolean" default="false" />
+    <aura:attribute name="saved" type="Boolean" default="false" />
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if> 
+    <div class="slds-box ">
+   <!-- <lightning:layout multipleRows="true" >
+       <lightning:layoutItem size="12">
+           <div class="slds-col slds-size_1-of-1" >
+    			<span>
+                <div class="slds-box slds-var-m-around_xxx-small" >
+              <p><img src="{!$Resource.AutoRABITPOC}" width="200" height="10"/></p>
+                   
+                </div>
+        		</span>
+  			</div> 
+        </lightning:layoutItem>
+    </lightning:layout>-->
+       
+         <aura:if isTrue="{!v.disabled}" >
+        <lightning:layout>
+           
+            <lightning:layoutItem size="12">
+                 <div class="slds-box ">
+                		<c:ARMPOCUseCases/>
+                    	<!--<c:VaultPOCUseCases/>-->
+                </div>
+                 <div class="slds-float_right">
+            <lightning:button variant="brand" type="button" name="Next" label="Next" onclick="{!c.ClickNext}" />
+            </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+        </aura:if>
+        
+    <aura:if isTrue="{!v.disabledMain}" >
+    <aura:if isTrue="{!!v.saved}">
+    
+    <div class="slds-m-around_xx-large">
+        <lightning:recordEditForm objectApiName="AutoRABIT_POC__c" aura:id="pocForm" onload="{!c.handleLoad}"  onsubmit="{!c.handleSubmit}"
+            onsuccess="{!c.handleSuccess}">
+            <lightning:layout multipleRows="true">
+                
+				
+                <lightning:layoutItem size="6">
+            <span>
+                <div class="slds-box ">
+               <div class="slds-text-heading_large slds-text-align_Right slds-text-color_destructive">
+                            Problem Statements:</div>
+                    <lightning:inputField  fieldName="Custmer_Name__c" required="true" />
+               		<lightning:inputField  fieldName="Abridged_Problem_Statement__c" />
+               		<lightning:inputField  fieldName="Use_Cases_in_AutoRABIT__c" />
+                   <lightning:inputField  fieldName="Abridged_Problem_Statement1__c" />
+               		<lightning:inputField  fieldName="Use_Cases_in_AutoRABIT1__c" />
+                   <lightning:inputField  fieldName="Abridged_Problem_Statement2__c" />
+               		<lightning:inputField  fieldName="Use_Cases_in_AutoRABIT2__c" />
+                </div>			
+            </span>
+               
+                </lightning:layoutItem>
+                <lightning:layoutItem size="1">
+                </lightning:layoutItem>
+                <lightning:layoutItem size="5">
+           
+            <span>
+               <div class="slds-box slds-text-align_left">
+               <div class="slds-text-heading_Medium  slds-text-color_destructive ">
+                            Integrations you would like to see as part of POC?</div>
+                
+                   	<lightning:inputField  fieldName="Version_Control_system__c"  aura:id="VC" /><br/>
+               		<lightning:inputField  fieldName="ALM_System__c" />
+               		<lightning:inputField  fieldName="Static_code_Analysis__c" />
+                   	<lightning:inputField  fieldName="nCino_Vlocity__c" />
+               		<lightning:inputField  fieldName="Test_Automation_Factory__c" />
+                </div> 			
+            </span>
+                </lightning:layoutItem>
+                
+            </lightning:layout><br/>
+            <div class="slds-float_right slds-p-right_xx-small">
+            <lightning:button variant="brand" type="button" name="Save" label="Submit" onclick="{!c.handlePOC}" />
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="slds-float_right slds-p-right_xx-small">
+            <lightning:button variant="brand" type="button" name="Clear" label="Back" onclick="{!c.Clear}" />
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="slds-float_right slds-p-right_xx-small">
+            <lightning:button variant="brand" type="button" name="Cancel" label="Cancel" onclick="{!c.Cancel}" />
+            </div>
+        </lightning:recordEditForm>
+        </div>
+       <aura:set attribute="else">
+        <div class="slds-text-heading_large slds-text-align_center slds-text-color_success slds-box">
+                            Record saved succesfully Thankyou!!</div>
+    </aura:set>
+       
+    </aura:if>
+        
+      </aura:if>
+        
+    </div>   
+</aura:component>

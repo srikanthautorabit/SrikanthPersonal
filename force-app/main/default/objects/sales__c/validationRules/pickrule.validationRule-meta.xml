@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pickrule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(PRIORVALUE(STATE__c))),ISCHANGED(STATE__c)) &amp;&amp; ((ISPICKVAL(COUNTRY__c,&apos;INDIA&apos;)&amp;&amp;(ISPICKVAL(STATE__c,&apos;ANDHRAPRADES&apos;)||ISPICKVAL(STATE__c,&apos;TELANGANA&apos;)||ISPICKVAL(STATE__c,&apos;KARNATAKA&apos;)))||
+(ISPICKVAL(COUNTRY__c,&apos;AUSTRALIA&apos;)&amp;&amp;(ISPICKVAL(STATE__c,&apos;ANDHRAPRADES&apos;)||ISPICKVAL(STATE__c,&apos;TELANGANA&apos;)||ISPICKVAL(STATE__c,&apos;KARNATAKA&apos;)))||
+(ISPICKVAL(COUNTRY__c, &apos;USA&apos;)&amp;&amp;(ISPICKVAL(STATE__c,&apos;ANDHRAPRADES&apos;)||ISPICKVAL(STATE__c,&apos;TELANGANA&apos;)||ISPICKVAL(STATE__c,&apos;KARNATAKA&apos;))))</errorConditionFormula>
+    <errorMessage>can not update update</errorMessage>
+</ValidationRule>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Use Cases in AutoRABIT --></label>
+    <name>Use_Cases_in_AutoRABIT__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AutoRABITPOCS</fullName>
+    <columns>NAME</columns>
+    <columns>Abridged_Problem_Statement__c</columns>
+    <columns>Use_Cases_in_AutoRABIT__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>AutoRABITPOCS</label>
+</ListView>

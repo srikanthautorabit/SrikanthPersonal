@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- STATE --></label>
+    <name>STATES__c</name>
+    <picklistValues>
+        <masterLabel>ANDHRA PRADES</masterLabel>
+        <translation><!-- ANDHRA PRADES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AUCKLAND</masterLabel>
+        <translation><!-- AUCKLAND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRISBANE</masterLabel>
+        <translation><!-- BRISBANE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CALIFORNIA</masterLabel>
+        <translation><!-- CALIFORNIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KARNATAKA</masterLabel>
+        <translation><!-- KARNATAKA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW YORK</masterLabel>
+        <translation><!-- NEW YORK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PERTH</masterLabel>
+        <translation><!-- PERTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SYDNEY</masterLabel>
+        <translation><!-- SYDNEY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TELANGANA</masterLabel>
+        <translation><!-- TELANGANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEXAS</masterLabel>
+        <translation><!-- TEXAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WILLINGTON</masterLabel>
+        <translation><!-- WILLINGTON --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

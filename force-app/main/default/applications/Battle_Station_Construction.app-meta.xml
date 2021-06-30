@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>Battle_Station__c</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Battle Station Construction</label>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>Battle_Station__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Resource__c</tabs>
+    <tabs>Supply__c</tabs>
+    <tabs>PICKLIST__c</tabs>
+    <tabs>sales__c</tabs>
+    <tabs>Suggestion__c</tabs>
+    <tabs>Financial_Account__c</tabs>
+    <tabs>AutoRABIT_POC__c</tabs>
+    <tabs>Customer_Account__c</tabs>
+</CustomApplication>

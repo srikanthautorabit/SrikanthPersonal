@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vaultt</fullName>
+    <active>true</active>
+    <label>Vaultt</label>
+    <picklistValues>
+        <picklist>Abridged_Problem_Statement1__c</picklist>
+        <values>
+            <fullName>Achieve CI%2FCD for Salesforce DX using GUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cherry-pick and deploy only differences within specific user stories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create%2C version and deploy nCino feature templates with dependencies%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Package%3A Version metadata in Source Control and migrate data with dependencies to Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migrate data records %28w%2F dependency across objects%29 from one Salesforce environment to another%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevent Admins%2FDevelopers from overwriting their fellow user%27s metadata changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule deployments%2C code coverage and pre%2Fpost deployment steps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule pre%2Fpost deployment activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sync your Salesforce box with Version Control on metadata changes%2C including deletions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Understand who is deploying what changes to an environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version and migrate your Vlocity datapacks with dependencies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Abridged_Problem_Statement2__c</picklist>
+        <values>
+            <fullName>Achieve CI%2FCD for Salesforce DX using GUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cherry-pick and deploy only differences within specific user stories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create%2C version and deploy nCino feature templates with dependencies%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Package%3A Version metadata in Source Control and migrate data with dependencies to Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migrate data records %28w%2F dependency across objects%29 from one Salesforce environment to another%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevent Admins%2FDevelopers from overwriting their fellow user%27s metadata changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule deployments%2C code coverage and pre%2Fpost deployment steps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule pre%2Fpost deployment activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sync your Salesforce box with Version Control on metadata changes%2C including deletions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Understand who is deploying what changes to an environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version and migrate your Vlocity datapacks with dependencies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Abridged_Problem_Statement__c</picklist>
+        <values>
+            <fullName>Achieve CI%2FCD for Salesforce DX using GUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cherry-pick and deploy only differences within specific user stories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create%2C version and deploy nCino feature templates with dependencies%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Package%3A Version metadata in Source Control and migrate data with dependencies to Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migrate data records %28w%2F dependency across objects%29 from one Salesforce environment to another%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevent Admins%2FDevelopers from overwriting their fellow user%27s metadata changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule deployments%2C code coverage and pre%2Fpost deployment steps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule pre%2Fpost deployment activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sync your Salesforce box with Version Control on metadata changes%2C including deletions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Understand who is deploying what changes to an environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version and migrate your Vlocity datapacks with dependencies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Use_Cases_in_AutoRABIT1__c</picklist>
+        <values>
+            <fullName>Assists with preparation of logical metadata packages with depedencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate Unit Tests by running code coverage only on dependent Test Classes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Code quality check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collaborate with other users on metadata changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completely driven by GUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constructive and Destructive changes can be packaged into one commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create feature templates for nCino with dependencies across sObjects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creation of templates to support pre%2Fpost deployment activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta Deployments for nested metadata components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dependent records across multiple objects can be migrated with no limit on %23records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deploy nCino templates %28w%2F dependencies%29 from either Salesforce Org or Version Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deploy specific work items %28with dependencies%29 to higher environments that have passed testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Help users achieve CD faster than any other release management platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leverage an existing build to re-deploy into other environments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out-of-Box Integrations with commonly used tools like JIRA%2C GIT%2C etc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Record the Metadata Configuration and nCino records in a branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurrent metadata check-ins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rollback the package either completely or selectively upon successful deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Run Pre%2FPost Destructive Changes during Rollback to avoid dependency errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce users can collaborate on their metadata changes%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule Data Loads or Integrate with metadata deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule deployments %28daily%2C weekly%2C webhook-based%29 with pre%2Fpost deployment tasks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensitive records masked during migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support all conflict resolution types - Ours%2C Theirs%2C Recursive and Fast Forward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supports Lookup%2C Master-Detail%2C Junction objects%2C Self References</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supports creation of contextual Scratch orgs and Unlocked Packages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tag work items during deployments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Templates can be run separately or tagged with CI Jobs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validate%2FTest a user story prior to a push</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version and deploy Vlocity datapacks with dependencies to reduce deployment times</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version unlocked packages and commit the changes to version control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualize every day CI%2FCD operations and be able to generate reports on a daily%2Fweekly%2Fmonthly basis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Use_Cases_in_AutoRABIT2__c</picklist>
+        <values>
+            <fullName>Assists with preparation of logical metadata packages with depedencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate Unit Tests by running code coverage only on dependent Test Classes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Code quality check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collaborate with other users on metadata changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completely driven by GUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constructive and Destructive changes can be packaged into one commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create feature templates for nCino with dependencies across sObjects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creation of templates to support pre%2Fpost deployment activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta Deployments for nested metadata components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dependent records across multiple objects can be migrated with no limit on %23records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deploy nCino templates %28w%2F dependencies%29 from either Salesforce Org or Version Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deploy specific work items %28with dependencies%29 to higher environments that have passed testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Help users achieve CD faster than any other release management platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leverage an existing build to re-deploy into other environments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out-of-Box Integrations with commonly used tools like JIRA%2C GIT%2C etc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Record the Metadata Configuration and nCino records in a branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurrent metadata check-ins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rollback the package either completely or selectively upon successful deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Run Pre%2FPost Destructive Changes during Rollback to avoid dependency errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce users can collaborate on their metadata changes%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule Data Loads or Integrate with metadata deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule deployments %28daily%2C weekly%2C webhook-based%29 with pre%2Fpost deployment tasks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensitive records masked during migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support all conflict resolution types - Ours%2C Theirs%2C Recursive and Fast Forward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supports Lookup%2C Master-Detail%2C Junction objects%2C Self References</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supports creation of contextual Scratch orgs and Unlocked Packages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tag work items during deployments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Templates can be run separately or tagged with CI Jobs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validate%2FTest a user story prior to a push</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version and deploy Vlocity datapacks with dependencies to reduce deployment times</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version unlocked packages and commit the changes to version control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualize every day CI%2FCD operations and be able to generate reports on a daily%2Fweekly%2Fmonthly basis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Use_Cases_in_AutoRABIT__c</picklist>
+        <values>
+            <fullName>Assists with preparation of logical metadata packages with depedencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate Unit Tests by running code coverage only on dependent Test Classes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Code quality check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collaborate with other users on metadata changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completely driven by GUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constructive and Destructive changes can be packaged into one commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create feature templates for nCino with dependencies across sObjects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creation of templates to support pre%2Fpost deployment activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta Deployments for nested metadata components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dependent records across multiple objects can be migrated with no limit on %23records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deploy nCino templates %28w%2F dependencies%29 from either Salesforce Org or Version Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deploy specific work items %28with dependencies%29 to higher environments that have passed testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Help users achieve CD faster than any other release management platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leverage an existing build to re-deploy into other environments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out-of-Box Integrations with commonly used tools like JIRA%2C GIT%2C etc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Record the Metadata Configuration and nCino records in a branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurrent metadata check-ins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rollback the package either completely or selectively upon successful deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Run Pre%2FPost Destructive Changes during Rollback to avoid dependency errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce users can collaborate on their metadata changes%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule Data Loads or Integrate with metadata deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule deployments %28daily%2C weekly%2C webhook-based%29 with pre%2Fpost deployment tasks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensitive records masked during migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support all conflict resolution types - Ours%2C Theirs%2C Recursive and Fast Forward</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supports Lookup%2C Master-Detail%2C Junction objects%2C Self References</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supports creation of contextual Scratch orgs and Unlocked Packages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tag work items during deployments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Templates can be run separately or tagged with CI Jobs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validate%2FTest a user story prior to a push</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version and deploy Vlocity datapacks with dependencies to reduce deployment times</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version unlocked packages and commit the changes to version control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualize every day CI%2FCD operations and be able to generate reports on a daily%2Fweekly%2Fmonthly basis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Use_Cases_in_Vault_1__c</picklist>
+        <values>
+            <fullName>Apply Retention Periods on Backup%2FArchival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backup only specific records important to your organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backup records into a storage service and also%2C delete it from Salesforce upon user confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare Metadata%2FData between a backup snapshot and live environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare Metadata%2FData between two backup snapshots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create templates that can backup metadata and data with dependencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclude Deleted Data in Salesforce from being backed up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Include unlimited hierarchical dependencies of data to be restored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Input a CSV or collection of record IDs to anonymize records from backup snapshot%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mask sensitive information prior to your data deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migrate data and metadata with dependencies across multiple levels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimize API calls during every backup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover metadata%2Fdata selectively from a backup snapshot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover the entire metadata%2Fdata from a backup snapshot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restore records from archives with dependencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Run an incremental%2Ffull backup of your Salesforce Org</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule backups that can be run more than once a day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seed metadata and data at once from a backup snapshot to a Salesforce environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up Alert Rules in Vault to intelligently capture any real-time changes in metadata%2Fdata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up Incremental%2FFull Backup on Data%2FMetadata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Use_Cases_in_Vault_2__c</picklist>
+        <values>
+            <fullName>Apply Retention Periods on Backup%2FArchival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backup only specific records important to your organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backup records into a storage service and also%2C delete it from Salesforce upon user confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare Metadata%2FData between a backup snapshot and live environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare Metadata%2FData between two backup snapshots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create templates that can backup metadata and data with dependencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclude Deleted Data in Salesforce from being backed up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Include unlimited hierarchical dependencies of data to be restored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Input a CSV or collection of record IDs to anonymize records from backup snapshot%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mask sensitive information prior to your data deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migrate data and metadata with dependencies across multiple levels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimize API calls during every backup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover metadata%2Fdata selectively from a backup snapshot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover the entire metadata%2Fdata from a backup snapshot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restore records from archives with dependencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Run an incremental%2Ffull backup of your Salesforce Org</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule backups that can be run more than once a day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seed metadata and data at once from a backup snapshot to a Salesforce environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up Alert Rules in Vault to intelligently capture any real-time changes in metadata%2Fdata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up Incremental%2FFull Backup on Data%2FMetadata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Use_Cases_in_Vault_3__c</picklist>
+        <values>
+            <fullName>Apply Retention Periods on Backup%2FArchival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backup only specific records important to your organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backup records into a storage service and also%2C delete it from Salesforce upon user confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare Metadata%2FData between a backup snapshot and live environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare Metadata%2FData between two backup snapshots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create templates that can backup metadata and data with dependencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclude Deleted Data in Salesforce from being backed up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Include unlimited hierarchical dependencies of data to be restored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Input a CSV or collection of record IDs to anonymize records from backup snapshot%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mask sensitive information prior to your data deployment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migrate data and metadata with dependencies across multiple levels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimize API calls during every backup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover metadata%2Fdata selectively from a backup snapshot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recover the entire metadata%2Fdata from a backup snapshot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restore records from archives with dependencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Run an incremental%2Ffull backup of your Salesforce Org</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule backups that can be run more than once a day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seed metadata and data at once from a backup snapshot to a Salesforce environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up Alert Rules in Vault to intelligently capture any real-time changes in metadata%2Fdata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up Incremental%2FFull Backup on Data%2FMetadata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vault_Problem_Statement_1__c</picklist>
+        <values>
+            <fullName>Anonymize records from a backup snapshot by exercising Vault%27s GDPR feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare either 2 backup snapshots or 1 backup with the live org</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enable backup for both Salesforce metadata and data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ensure information in Salesforce is constantly monitored to avoid data integrity issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frequent your %22change-only%22 backups by using an Optimized API approach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Have your Salesforce environment within data limits with Vault archiving capability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve your RTO%2FRPO by using Vault multi-depth hierarchical restore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready your sandboxes for functional testing with data and metadata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vault_Problem_Statement_2__c</picklist>
+        <values>
+            <fullName>Anonymize records from a backup snapshot by exercising Vault%27s GDPR feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare either 2 backup snapshots or 1 backup with the live org</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enable backup for both Salesforce metadata and data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ensure information in Salesforce is constantly monitored to avoid data integrity issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frequent your %22change-only%22 backups by using an Optimized API approach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Have your Salesforce environment within data limits with Vault archiving capability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve your RTO%2FRPO by using Vault multi-depth hierarchical restore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready your sandboxes for functional testing with data and metadata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vault_Problem_Statement_3__c</picklist>
+        <values>
+            <fullName>Anonymize records from a backup snapshot by exercising Vault%27s GDPR feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare either 2 backup snapshots or 1 backup with the live org</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enable backup for both Salesforce metadata and data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ensure information in Salesforce is constantly monitored to avoid data integrity issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frequent your %22change-only%22 backups by using an Optimized API approach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Have your Salesforce environment within data limits with Vault archiving capability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve your RTO%2FRPO by using Vault multi-depth hierarchical restore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready your sandboxes for functional testing with data and metadata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

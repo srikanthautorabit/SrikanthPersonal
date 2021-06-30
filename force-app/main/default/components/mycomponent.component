@@ -1,0 +1,13 @@
+<apex:component >
+  <apex:outputPanel styleClass="popup" layout="block"  >
+                                                    <apex:pageBlock >
+                                                    
+                                                    <apex:outputText value="GSD_CSC_Get_Location_from_MDCP" style="font-weight:bold; color:Red;" /><br/>
+                                                    
+                                                    <apex:pageBlockButtons location="Bottom">
+                                                        <apex:commandButton value="YES" />
+                                                        <apex:commandButton value="NO"  />
+                                                     </apex:pageBlockButtons>
+                                                     </apex:pageBlock>
+                                                </apex:outputPanel>
+</apex:component>

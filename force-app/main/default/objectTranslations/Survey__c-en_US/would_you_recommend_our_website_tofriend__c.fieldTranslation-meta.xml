@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- would you recommend website to Friend? --></label>
+    <name>would_you_recommend_our_website_tofriend__c</name>
+</CustomFieldTranslation>

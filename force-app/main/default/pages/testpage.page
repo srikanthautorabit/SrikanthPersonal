@@ -1,0 +1,59 @@
+<apex:page controller="testctrl"  standardStylesheets="true" sidebar="false" showHeader="false" action="{!getFinAccountList}">
+    <apex:form >
+    
+    <apex:pageBlock title="VSC Order Entry Form">
+       <apex:pageBlockSection columns="2" title="Client Information">
+        <apex:outputField value="{!oppRole.Contact.name}" label="Client Name"/>
+               <apex:outputField value="{!oppRole.Contact.MailingCity}" label="Location"/>
+               <apex:outputField value="{!oppRole.Contact.Phone }" label="Phone No"/>
+               <apex:outputField value="{!oppRole.Contact.Email }" label="Email"/>
+          
+       </apex:pageBlockSection>
+       
+       <apex:pageBlockSection title="Financial Account" columns="1">
+        <apex:pageblocktable id="allAccounts" value="{!finAccountList }" var="finAccount">
+            <apex:column headervalue="Select">
+                <input type="Checkbox" name="selectedAccount" value="{!finAccount.Id}" onclick="setSelection('{!finAccount.Id}'); return true;" />
+            </apex:column>
+            <apex:column headervalue="Financial Account Name">
+                <apex:outputText value="{!finAccount.Name}" />
+            </apex:column>
+            <apex:column headervalue="Client Account Number">
+                <apex:outputText value="{!finAccount.Client_Account_Number__c}" />
+            </apex:column>
+            <apex:column headervalue="Status">
+                <apex:outputText value="{!finAccount.Account_Status__c}" />
+            </apex:column>
+            <apex:column headervalue="Product Type">
+                <apex:outputText value="{!finAccount.Product_Type__c}" />
+            </apex:column>
+            <apex:column headervalue="Owner">
+                <apex:outputText value="{!finAccount.owner.Name}" />
+            </apex:column>
+            <!--
+            <apex:column headervalue="SF ID">
+                <apex:outputText value="{!finAccount.id}" />
+            </apex:column>
+            -->
+        </apex:pageblocktable>
+       
+       </apex:pageBlockSection>
+   <apex:pageBlockSection title="Product Details">
+       
+          Email : {!Email} <br/>
+          Distribution Method : {!DIsti}<br/>
+          Format : {!Formatfield}<br/>
+          Add on #1 : {!Addonfield}<br/>
+          Yes : {!yes1}<br/>
+          Add on #2 : {!Addonfield2}<br/>
+          yes 2: {!Yes2}<br/>
+          Is RPDM Included : {!RDPM}<br/>
+          Impression : {!Impression}<br/>
+          Rate : {!Rate}<br/>
+          Is StoreCopy Included : {!store}<br/>
+          Address : {!address}<br/>
+          Quantity : {!Quantity}<br/>
+          </apex:pageBlockSection>
+     </apex:pageBlock>     
+   </apex:form>
+</apex:page>

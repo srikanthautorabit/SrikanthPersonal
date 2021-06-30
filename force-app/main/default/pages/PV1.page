@@ -1,0 +1,14 @@
+<apex:page >
+  <apex:form >
+        <apex:pageBlock >
+            <apex:pageblockSection columns="1" >
+                <apex:outputField value="{COUNTRY__c}"/>
+                <apex:outputField value="{STATES__c}"/>
+                <apex:outputField value="{CHECK__c}"/>
+                <apex:outputField value="{DESCRIPTION__c}"  />
+                <apex:outputField value="{COMMENTS__c}"/>
+            </apex:pageblockSection>
+        <Apex:commandButton value="Save" action="{!Save}"/>
+        </apex:pageBlock>
+   </apex:form>
+</apex:page>

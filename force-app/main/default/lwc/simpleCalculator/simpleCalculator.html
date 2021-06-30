@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="simple calcualtor">
+  <div>enter first number
+  <lightning-input type="number" style="width: 3cm;height: 20mm" onchange={firstvalueset}></lightning-input></div>
+  <div>enter second number</div>
+  <lightning-input type="number" style="width: 3cm;height: 20mm" onchange={secondvalueset}></lightning-input>
+   <div class="button">
+  <lightning-input type="button" value="ADD +" onclick={add}></lightning-input>
+  <lightning-input type="button" value="subtract -" onclick={subtract}></lightning-input>
+  <lightning-input type="button" value="multiply *" onclick={multiply}></lightning-input>
+  <lightning-input type="button" value="divide %" onclick={divide}></lightning-input>
+</div>
+<div> the result is: {result}</div>
+    </lightning-card>
+</template>

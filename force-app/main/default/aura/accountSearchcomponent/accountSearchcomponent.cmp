@@ -1,0 +1,167 @@
+<aura:component controller="searchAccountController" implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride,force:lightningQuickAction" access="global" >
+<!-- CREATE ATTRIBUTE/VARIABLE-->
+    <aura:attribute name="isOpen" type="boolean" default="true"/>
+    <aura:attribute name="isTableOpen" type="boolean" default="False"/>
+    <aura:attribute name="searchResult" type="List" description="use for store and display account list return from server"/>
+    <aura:attribute name="searchKeyword" type="String" description="use for store user search input"/>
+    <aura:attribute name="phone" type="String" description="use for store user search input"/>
+    <aura:attribute name="street" type="String" description="use for store user search input"/>
+    <aura:attribute name="City" type="String" description="use for store user search input"/>
+    <aura:attribute name="State" type="String" description="use for store user search input"/>
+    <aura:attribute name="Postalcode" type="String" description="use for store user search input"/>
+    <aura:attribute name="Country" type="String" description="use for store user search input"/>
+    <aura:attribute name="Message" type="boolean" default="false" description="use for display no record found message"/>
+    <aura:attribute name="TotalNumberOfRecord" type="integer" default="0" description="use for display Number of records"/>
+    
+    <!-- SHOW LOADING SPINNER--> 
+    <lightning:spinner variant="brand" size="large" aura:id="Id_spinner" class="slds-hide" />
+    <aura:if isTrue="{!v.isOpen}">
+    <div class="slds-m-around_medium">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+       <!-- SEARCH INPUT AND SEARCH BUTTON--> 
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                        
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Account Search</h2>
+                    </header>
+         <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+         
+                <div class="slds-grid">
+                <lightning:input value="{!v.searchKeyword}"
+                                 required="true"
+                                placeholder="Enter Value"
+                                 aura:id="searchField"
+                                 label="Account Name" class="slds-size_1-of-2"/>
+               
+                <lightning:input value="{!v.phone}"
+                                 
+                                 placeholder="Enter Value"
+                                 aura:id="phone"
+                                 label="Phone" class="slds-size_1-of-2 slds-p-left_x-small" />
+                    </div>
+             	 <div class="slds-grid">
+                 <lightning:input value="{!v.street}"
+                                 placeholder="Enter Value"
+                                 aura:id="street"
+                                 label="Billing Street" class="slds-size_1-of-2"/>
+                <lightning:input value="{!v.City}"
+                                 placeholder="Enter Value"
+                                 aura:id="city"
+                                 label="Billing City" class="slds-size_1-of-2 slds-p-left_x-small"/>
+                 </div>
+             	<div class="slds-grid">
+                <lightning:input value="{!v.State}"
+                                 placeholder="Enter Value"
+                                 aura:id="state"
+                                 label="Billing State/Province" class="slds-size_1-of-2"/>
+                <lightning:input value="{!v.Postalcode}"
+                                 placeholder="Enter Value"
+                                 aura:id="postal"
+                                 label="Billing Zip/Postal Code" class="slds-size_1-of-2 slds-p-left_x-small"/>
+                 </div>
+             	<div class="slds-grid">
+                <lightning:input value="{!v.Country}"
+                                 placeholder="Enter Value"
+                                 aura:id="country"
+                                 label="Billing Country" class="slds-size_1-of-2"/>
+                 
+             </div>
+             <div class="slds-grid slds-align_absolute-center slds-p-top_medium" >
+             <lightning:button onclick="{!c.Search}"
+                                  variant="brand"
+                                  label="Search"
+                                  iconName="utility:search" />
+             </div>
+           <!-- <lightning:layoutItem size="4" padding="around-small">
+                <lightning:button onclick="{!c.Search}"
+                                  variant="brand"
+                                  label="Search"
+                                  iconName="utility:search"/> 
+            </lightning:layoutItem>-->
+            
+             
+        <!-- TOTAL RECORDS BADGES
+        <div class="slds-m-around_x-small">
+            <lightning:badge label="{!v.TotalNumberOfRecord}" />
+        </div>--> 
+        
+        <!-- ERROR MESSAGE IF NOT RECORDS FOUND--> 
+        <aura:if isTrue="{!v.Message}">
+            <div class="slds-notify_container slds-is-relative">
+                <div class="slds-notify slds-notify_toast slds-theme_error" role="alert">
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small">No Records Found...</h2>
+                    </div>
+                </div>
+            </div>
+            <lightning:layoutItem size="4" padding="around-small">
+                <lightning:button variant="brand" label="Create New Account" onclick="{!c.Newaccount}" /> 
+            </lightning:layoutItem>
+        </aura:if>
+       
+        <!-- TABLE CONTENT--> 
+        <aura:if isTrue="{!v.isTableOpen}">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="S.no">S.no</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Account Name">Account Name</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Type">Type</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Industry">Industry</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Phone">Phone</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Fax">Fax</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody> 
+                <!--### display all records of searchResult attribute by aura:iteration ###-->
+                <aura:iteration items="{!v.searchResult}" var="acc" indexVar="count">
+                    <tr>
+                      <td>
+                            <div class="slds-truncate">{!count + 1}</div>
+                        </td> 
+                        <td>
+                            <div class="slds-truncate">{!acc.Name}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">{!acc.Type}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">{!acc.Industry}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">{!acc.Phone}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">{!acc.Fax}</div>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+            </aura:if>
+         </div>
+                <footer class="slds-modal__footer">
+                        <lightning:button variant="neutral" 
+                                          label="Cancel"
+                                          title="Cancel"
+                                          onclick="{! c.closeModel }"/>
+                        
+                    </footer>
+                </div>
+    </section>
+        </div>
+        </aura:if>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</aura:component>

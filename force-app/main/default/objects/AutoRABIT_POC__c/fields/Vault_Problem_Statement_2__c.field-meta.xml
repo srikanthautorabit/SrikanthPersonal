@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vault_Problem_Statement_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Problem Statement 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enable backup for both Salesforce metadata and data</fullName>
+                <default>false</default>
+                <label>Enable backup for both Salesforce metadata and data</label>
+            </value>
+            <value>
+                <fullName>Frequent your &quot;change-only&quot; backups by using an Optimized API approach</fullName>
+                <default>false</default>
+                <label>Frequent your &quot;change-only&quot; backups by using an Optimized API approach</label>
+            </value>
+            <value>
+                <fullName>Compare either 2 backup snapshots or 1 backup with the live org</fullName>
+                <default>false</default>
+                <label>Compare either 2 backup snapshots or 1 backup with the live org</label>
+            </value>
+            <value>
+                <fullName>Improve your RTO/RPO by using Vault multi-depth hierarchical restore</fullName>
+                <default>false</default>
+                <label>Improve your RTO/RPO by using Vault&apos;s multi-depth hierarchical restore</label>
+            </value>
+            <value>
+                <fullName>Ready your sandboxes for functional testing with data and metadata</fullName>
+                <default>false</default>
+                <label>Ready your sandboxes for functional testing with data and metadata</label>
+            </value>
+            <value>
+                <fullName>Have your Salesforce environment within data limits with Vault archiving capability</fullName>
+                <default>false</default>
+                <label>Have your Salesforce environment within data limits with Vault&apos;s archiving capability</label>
+            </value>
+            <value>
+                <fullName>Ensure information in Salesforce is constantly monitored to avoid data integrity issues</fullName>
+                <default>false</default>
+                <label>Ensure information in Salesforce is constantly monitored to avoid data integrity issues</label>
+            </value>
+            <value>
+                <fullName>Anonymize records from a backup snapshot by exercising Vault&apos;s GDPR feature</fullName>
+                <default>false</default>
+                <label>Anonymize records from a backup snapshot by exercising Vault&apos;s GDPR feature</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

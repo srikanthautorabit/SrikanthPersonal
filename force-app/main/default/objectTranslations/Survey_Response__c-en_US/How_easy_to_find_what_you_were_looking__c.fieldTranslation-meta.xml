@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- How easy to find what you were looking? --></label>
+    <name>How_easy_to_find_what_you_were_looking__c</name>
+    <picklistValues>
+        <masterLabel>Extremely easy</masterLabel>
+        <translation><!-- Extremely easy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not at all easy</masterLabel>
+        <translation><!-- Not at all easy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not so easy</masterLabel>
+        <translation><!-- Not so easy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Somewhat easy</masterLabel>
+        <translation><!-- Somewhat easy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Very easy</masterLabel>
+        <translation><!-- Very easy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

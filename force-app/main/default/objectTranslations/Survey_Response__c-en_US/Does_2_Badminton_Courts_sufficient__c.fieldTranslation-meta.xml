@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Are two badminton courts sufficient --></label>
+    <name>Does_2_Badminton_Courts_sufficient__c</name>
+    <picklistValues>
+        <masterLabel>Need More</masterLabel>
+        <translation><!-- Need More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need to have some details on Court bookings</masterLabel>
+        <translation><!-- Need to have some details on Court bookings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting Time is high</masterLabel>
+        <translation><!-- Waiting Time is high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

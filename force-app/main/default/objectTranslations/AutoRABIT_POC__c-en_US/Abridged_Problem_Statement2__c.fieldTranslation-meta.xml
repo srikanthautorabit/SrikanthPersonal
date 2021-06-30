@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Problem Statement 3 --></label>
+    <name>Abridged_Problem_Statement2__c</name>
+    <picklistValues>
+        <masterLabel>Achieve CI/CD for Salesforce DX using GUI</masterLabel>
+        <translation><!-- Achieve CI/CD for Salesforce DX using GUI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cherry-pick and deploy only differences within specific user stories</masterLabel>
+        <translation><!-- Cherry-pick and deploy only differences within specific user stories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create, version and deploy nCino feature templates with dependencies.</masterLabel>
+        <translation><!-- Create, version and deploy nCino feature templates with dependencies. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managed Package: Version metadata in Source Control and migrate data with dependencies to Salesforce</masterLabel>
+        <translation><!-- Managed Package: Version metadata in Source Control and migrate data with dependencies to Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Migrate data records (w/ dependency across objects) from one Salesforce environment to another.</masterLabel>
+        <translation><!-- Migrate data records (w/ dependency across objects) from one Salesforce environment to another. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prevent Admins/Developers from overwriting their fellow user&apos;s metadata changes</masterLabel>
+        <translation><!-- Prevent Admins/Developers from overwriting their fellow user&apos;s metadata changes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schedule deployments, code coverage and pre/post deployment steps</masterLabel>
+        <translation><!-- Schedule deployments, code coverage and pre/post deployment steps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schedule pre/post deployment activities</masterLabel>
+        <translation><!-- Schedule pre/post deployment activities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sync your Salesforce box with Version Control on metadata changes, including deletions</masterLabel>
+        <translation><!-- Sync your Salesforce box with Version Control on metadata changes, including deletions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Understand who is deploying what changes to an environment</masterLabel>
+        <translation><!-- Understand who is deploying what changes to an environment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Version and migrate your Vlocity datapacks with dependencies</masterLabel>
+        <translation><!-- Version and migrate your Vlocity datapacks with dependencies --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

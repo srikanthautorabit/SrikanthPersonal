@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:attribute name="allCombinations" type="list" />
+    <aura:attribute name="values" type="String" />
+    	<aura:attribute name="casted" type="String[]" />
+    
+    
+	<!--<lightning:card title="get List Of Combinations">-->
+        
+     <lightning:layout horizontalAlign="center" >
+    	
+            <div>
+
+          <ui:inputText aura:id="Name" label=" Names"
+                        class="slds-input"
+                        labelClass="slds-form-element__label"
+                        value="{!v.values}"
+                       />
+                <lightning:button label="Perform PC" onclick="{!c.getCombinations}"></lightning:button>
+         </div><br/>
+    </lightning:layout>
+          <!--  <lightning:input type="number" variant="label-hidden" placeholder="Enter Number" aura:id="num"/>-->
+        <lightning:layout horizontalAlign="center" >    
+         <div>
+        <aura:iteration items="{!v.allCombinations}" var="each">
+          [{!each[0]},{!each[1]},{!each[2]},{!each[3]}] <br/>
+            
+            
+        </aura:iteration>
+         </div>
+    </lightning:layout>
+   <!-- </lightning:card>-->
+</aura:component>

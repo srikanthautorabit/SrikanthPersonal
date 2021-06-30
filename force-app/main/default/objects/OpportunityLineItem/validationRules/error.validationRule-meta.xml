@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>error</fullName>
+    <active>true</active>
+    <description>terdrts</description>
+    <errorConditionFormula>Opportunity.Description  = &apos;&apos; &amp;&amp; Opportunity.CreatedDate  &gt;   DATETIMEVALUE(&quot;2018-07-04 17:00:00&quot;)</errorConditionFormula>
+    <errorMessage>description is null</errorMessage>
+</ValidationRule>

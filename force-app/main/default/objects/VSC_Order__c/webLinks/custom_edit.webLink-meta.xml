@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>custom_edit</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>custom edit</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>window.open(&apos;/apex/Distimethod3?id={! VSC_Order__c.OpportunityId__c }&amp;OppName={!VSC_Order__c.Id}&apos;,&apos;_blank&apos;);</url>
+</WebLink>

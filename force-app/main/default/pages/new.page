@@ -1,0 +1,10 @@
+<apex:page standardController="PICKLIST__c">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:inputField value="{!PICKLIST__c.pick__c}"  required="true"/>
+    </apex:pageBlock>
+    </apex:form>
+  
+  
+  
+</apex:page>

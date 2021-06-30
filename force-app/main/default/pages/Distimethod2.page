@@ -1,0 +1,182 @@
+<apex:page controller="vscOrderEntryFormsController" tabStyle="Opportunity" sidebar="false" showHeader="false" action="{!getFinAccountList}">
+    <apex:pageMessages />
+    <Apex:form id="BackForm" rendered="{!showBack}">
+    
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="Bottom" >
+                <apex:commandButton action="{!Back}" value="Back"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </Apex:form>
+    <apex:form id="formid1" rendered="{!showpage}">
+    <apex:actionRegion >
+     <apex:pageBlock title="VSC Order Entry Form">
+       <apex:pageBlockSection columns="2" title="Client Information">
+        <apex:outputField value="{!oppRole.Contact.name}" label="Client Name"/>
+               <apex:outputField value="{!oppRole.Contact.MailingCity}" label="Location"/>
+               <apex:outputField value="{!oppRole.Contact.Phone }" label="Phone No"/>
+               <apex:outputField value="{!oppRole.Contact.Email }" label="Email"/>
+                <apex:outputField value="{!opp.Account.Store__c }" label="Store #"/>
+                <apex:outputField value="{!opp.Opportunity_num__c}" label="Opportunity #"/>
+               </apex:pageblockSection>
+               
+               <apex:pageBlockSection title="Financial Account" columns="1" id="table">
+                   <apex:pageBlockSection >
+                  <apex:inputText value="{!searchText}" label="Client Account Number"/>
+                  <apex:commandButton value="search" action="{!search}"/>
+                  </apex:pageBlockSection>
+                   <apex:pageBlock rendered="{!showtable1}">
+                  <apex:pageBlockTable value="{!FAlist}"  var="FA" id="FAs" rendered="{!(NOT(ISNULL(FAlist))) }">
+                        <apex:column headervalue="Select">
+            <apex:inputCheckbox value="{!FA.checkId__c}"  />
+            </apex:column>
+            <apex:column headervalue="Financial Account Name">
+                <apex:outputText value="{!FA.Name}" />
+            </apex:column>
+            <apex:column headervalue="Client Account Number">
+                <apex:outputText value="{!FA.Client_Account_Number__c}" />
+            </apex:column>
+            <apex:column headervalue="Status">
+                <apex:outputText value="{!FA.Account_Status__c}" />
+            </apex:column>
+            <apex:column headervalue="Product Type">
+                <apex:outputText value="{!FA.Product_Type__c}" />
+            </apex:column>
+            <apex:column headervalue="Owner">
+                <apex:outputText value="{!FA.owner.Name}" />
+            </apex:column>
+                         
+               
+                      </apex:pageBlockTable>
+               </apex:pageBlock>       
+        
+        <apex:pageblocktable id="allAccounts" value="{!finAccountList}" var="finAccount" rendered="{!showtable}" rows="5" >
+            <apex:column headervalue="Select">
+            <apex:inputCheckbox value="{!finAccount.checkId__c}" > 
+           
+     <!--<apex:param name="recordId" 
+              value="{!finAccount.Id}" 
+              assignTo="{!RecordToselete}"/>-->
+        </apex:inputCheckbox>
+            
+               <!-- <input type="Checkbox" name="selectedAccount" value="{!finAccount.id}"  />-->
+            </apex:column>
+            <apex:column headervalue="Financial Account Name">
+                <apex:outputText value="{!finAccount.Name}" />
+            </apex:column>
+            <apex:column headervalue="Client Account Number">
+                <apex:outputText value="{!finAccount.Client_Account_Number__c}" />
+            </apex:column>
+            <apex:column headervalue="Status">
+                <apex:outputText value="{!finAccount.Account_Status__c}" />
+            </apex:column>
+            <apex:column headervalue="Product Type">
+                <apex:outputText value="{!finAccount.Product_Type__c}" />
+            </apex:column>
+            <apex:column headervalue="Owner">
+                <apex:outputText value="{!finAccount.owner.Name}" />
+            </apex:column>
+            <!--
+            <apex:column headervalue="SF ID">
+                <apex:outputText value="{!finAccount.id}" />
+            </apex:column>
+            -->
+        </apex:pageblocktable>
+   <!--   <apex:commandButton action="{!saveselected}" value="save selected" rerender="null"/>-->
+        <apex:panelGrid columns="4">
+    <center>
+        <apex:commandButton value="First" action="{!showFirst}" rerender="table" />
+        <apex:commandButton value="Previous" action="{!showPrevious}"  rerender="table"/>
+        <apex:commandButton value="Next" action="{!showNext}" rerender="table"/>
+        <apex:commandButton value="Last" action="{!showLast}" rerender="table" />
+        </center>
+    </apex:panelGrid>
+        </apex:pageBlockSection>
+       <apex:pageBlockSection title="Product Details" columns="1" >
+               <apex:inputField value="{!vscorder.Distribution_Method__c}"/>
+               </apex:pageblockSection>
+
+               <apex:pageBlockSection columns="1">
+               <apex:inputField value="{!vscorder.Format__c}" > 
+               <apex:actionSupport event="onchange" reRender="Addvalue1,Addvalue2"  status="pageStatus"></apex:actionSupport>
+               </apex:inputField>
+               </apex:pageBlockSection>
+              
+               <apex:pageBlockSection id="Addvalue1" columns="1"  >
+               <apex:inputField value="{!vscorder.Addon_1__c}"  rendered="{!(vscorder.Format__c=='Basic+' || vscorder.Format__c=='Basic'|| vscorder.Format__c=='Image' || vscorder.Format__c=='Message'|| vscorder.Format__c=='Image+' || vscorder.Format__c=='Message+' || vscorder.Format__c=='Basic Mini' || vscorder.Format__c=='Image Mini'|| vscorder.Format__c=='Message Mini')|| vscorder.Format__c=='Perf Basic'|| vscorder.Format__c=='Perf Message'|| vscorder.Format__c=='Jumbo Image' }">
+               <apex:actionSupport event="onchange" reRender="Yes1"  status="pageStatus"></apex:actionSupport>
+               </apex:inputField>
+               <apex:pageBlockSection id="Yes1" >
+               <apex:inputField value="{!vscorder.Addon_1_yes__c}" rendered="{!(vscorder.Addon_1__c=='YES')}"  />
+               </apex:pageBlockSection>
+               </apex:pageBlockSection>
+             
+               <apex:pageBlockSection id="Addvalue2" columns="1" collapsible="{!vscorder.Format__c!='--None--'}">
+               <apex:inputField value="{!vscorder.Addon_2__c}" rendered="{!(vscorder.Format__c=='Basic+' || vscorder.Format__c=='Basic'|| vscorder.Format__c=='Image' || vscorder.Format__c=='Message'|| vscorder.Format__c=='Image+' || vscorder.Format__c=='Message+' || vscorder.Format__c=='Basic Mini' || vscorder.Format__c=='Image Mini'|| vscorder.Format__c=='Message Mini')|| vscorder.Format__c=='Perf Basic'|| vscorder.Format__c=='Perf Message'|| vscorder.Format__c=='Jumbo Image' }">
+               <apex:actionSupport event="onchange" reRender="Yes2"  status="pageStatus"></apex:actionSupport>
+               </apex:inputField>
+
+               <apex:pageBlockSection id="Yes2">
+               <apex:inputField value="{!vscorder.Addon_1_yes__c}" rendered="{!vscorder.Addon_1__c=='YES'}"/>
+              </apex:pageBlockSection> 
+              </apex:pageBlockSection> 
+               
+               <apex:pageBlockSection >
+
+               <apex:inputField value="{!vscorder.Is_RPDM_included_in_this_Order__c }">
+               <apex:actionSupport event="onchange" reRender="RPDM1"  status="pageStatus"></apex:actionSupport>
+
+               </apex:inputField>
+               <BR/>
+               
+             <apex:pageBlockSection id="RPDM1" >
+               
+               <apex:inputField value="{!vscorder.Impression__c}" rendered="{!vscorder.Is_RPDM_included_in_this_Order__c =='YES'}"/>
+               <apex:inputField value="{!vscorder.Rate__c}" rendered="{!vscorder.Is_RPDM_included_in_this_Order__c =='YES'}"/>
+             
+               </apex:pageBlockSection>
+               </apex:pageBlockSection>
+               
+               <apex:pageblockSection >
+               <apex:inputField value="{!vscorder.Is_storecopy_included_in_this_Order__c}">
+               <apex:actionSupport event="onchange" reRender="storecopy1"  status="pageStatus"></apex:actionSupport>
+               </apex:inputField>
+              <BR/>
+               <apex:pageblockSection id="storecopy1">
+               <apex:inputField value="{!vscorder.Address__c}" rendered="{!vscorder.Is_storecopy_included_in_this_Order__c=='YES'}"/>
+               <apex:inputField value="{!vscorder.Quantity__c}" rendered="{!vscorder.Is_storecopy_included_in_this_Order__c=='YES'}"/>
+               
+               
+               </apex:pageblockSection>
+               </apex:pageblockSection>
+                <apex:pageblockSection >
+               <apex:inputField value="{!vscorder.DSG_Services_Required__c}">
+               <apex:actionSupport event="onchange" reRender="DSG1"  status="pageStatus"></apex:actionSupport>
+               </apex:inputField>
+                 </apex:pageblockSection>
+                 <apex:pageblockSection >
+                  <apex:inputtext value="{!oppRole.Contact.name}" label="Client Name" />
+               </apex:pageblockSection>
+             
+               </apex:pageblock>
+               </apex:actionRegion>
+              
+               <apex:pageBlock >
+               <apex:pageBlockSection title="Attachment"> 
+              <apex:inputFile id="fileToUpload" value="{!fileBody}" fileName="{!fileName}"></apex:inputFile>
+                <apex:inputField value="{!vscorder.MDT_Resource__c}"/>
+                
+               </apex:pageBlockSection>
+                <apex:pageBlockButtons location="bottom" >
+                        <apex:commandButton value="Save" action="{!SaveData}" />
+                        <apex:commandButton value="Submit" action="{!Save}" />
+                        <apex:commandButton value="Cancel" action="{!cancel}" />
+
+                    </apex:pageBlockButtons>
+              
+         </apex:pageBlock>
+               </apex:form>
+             <apex:form id="formid" rendered="{!showpage}">   
+      </apex:form>
+     
+ </apex:page>

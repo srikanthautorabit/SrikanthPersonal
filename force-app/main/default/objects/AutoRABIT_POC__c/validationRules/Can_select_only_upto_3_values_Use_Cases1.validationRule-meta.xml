@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_select_only_upto_3_values_Use_Cases1</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(INCLUDES(Use_Cases_in_AutoRABIT1__c, &quot;Code quality check&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Constructive and Destructive changes can be packaged into one commit&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Recurrent metadata check-ins&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Salesforce users can collaborate on their metadata changes&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Supports all conflict resolution types - Ours, Theirs, Recursive and Fast Forward&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Validate/Test a user story prior to a push&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Deploy specific work items (with dependencies) to higher environments that have passed testing&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Leverage an existing build to re-deploy into other environments&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Rollback the package either completely or selectively upon successful deployment&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Delta Deployments for nested metadata components&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Schedule deployments (daily, weekly, webhook-based) with pre/post deployment tasks&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Automate Unit Tests by running code coverage only on dependent Test Classes&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Tag work items during deployments&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Run Pre/Post Destructive Changes during Rollback to avoid dependency errors&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Dependent records across multiple objects can be migrated with no limit on #records&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Sensitive records masked during migration&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Supports Lookup, Master-Detail, Junction objects, Self References&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Schedule Data Loads or Integrate with metadata deployment&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Assists with preparation of logical metadata packages with depedencies&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Supports creation of contextual Scratch orgs and Second Generation packaging (Unlocked Packages)&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Completely driven by GUI&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Creation of templates to support pre/post deployment activities&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Templates can be run separately or tagged with CI Jobs&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Out-of-Box Integrations with commonly used tools like JIRA, GIT, etc.&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Help users achieve CD faster than any other release management platform&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Create feature templates for nCino with dependencies across sObjects&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Record the Metadata Configuration and nCino records in a branch&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Deploy nCino templates (w/ dependencies) from either Salesforce Org or Version Control&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Version and deploy Vlocity datapacks with dependencies to reduce deployment times&quot;),1,0) + 
+IF(INCLUDES( Use_Cases_in_AutoRABIT1__c, &quot;Visualize every day CI/CD operations and be able to generate reports on a daily/weekly/monthly basis&quot;),1,0) &gt;3</errorConditionFormula>
+    <errorDisplayField>Use_Cases_in_AutoRABIT1__c</errorDisplayField>
+    <errorMessage>You can only select max 3 use cases for a problem statement</errorMessage>
+</ValidationRule>

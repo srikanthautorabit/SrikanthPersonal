@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Problem Statement 1 --></label>
+    <name>Vault_Problem_Statement_1__c</name>
+    <picklistValues>
+        <masterLabel>Anonymize records from a backup snapshot by exercising Vault&apos;s GDPR feature</masterLabel>
+        <translation><!-- Anonymize records from a backup snapshot by exercising Vault&apos;s GDPR feature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compare either 2 backup snapshots or 1 backup with the live org</masterLabel>
+        <translation><!-- Compare either 2 backup snapshots or 1 backup with the live org --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enable backup for both Salesforce metadata and data</masterLabel>
+        <translation><!-- Enable backup for both Salesforce metadata and data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ensure information in Salesforce is constantly monitored to avoid data integrity issues</masterLabel>
+        <translation><!-- Ensure information in Salesforce is constantly monitored to avoid data integrity issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frequent your &quot;change-only&quot; backups by using an Optimized API approach</masterLabel>
+        <translation><!-- Frequent your &quot;change-only&quot; backups by using an Optimized API approach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Have your Salesforce environment within data limits with Vault&apos;s archiving capability</masterLabel>
+        <translation><!-- Have your Salesforce environment within data limits with Vault&apos;s archiving capability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improve your RTO/RPO by using Vault&apos;s multi-depth hierarchical restore</masterLabel>
+        <translation><!-- Improve your RTO/RPO by using Vault&apos;s multi-depth hierarchical restore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready your sandboxes for functional testing with data and metadata</masterLabel>
+        <translation><!-- Ready your sandboxes for functional testing with data and metadata --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

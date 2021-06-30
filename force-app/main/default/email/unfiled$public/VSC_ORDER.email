@@ -1,0 +1,104 @@
+<messaging:emailTemplate subject="The order for the following Opportunity" recipientType="User" relatedToType="VSC_Order__c">
+<messaging:htmlEmailBody >
+ <html>
+      <body>
+       <STYLE type="text/css">
+            th
+      {
+        font-size: 8pt;
+        font-family: Tahoma, Arial;
+        text-align: left
+      }
+               
+      TD  
+      {
+          font-size: 10px; font-family: Tahoma, Arial; 
+      } 
+      TABLE {
+          border-width: 0;
+         
+          }
+          TR {
+          border-width: 0
+          }
+          .verticalTable
+      {
+        border: 1px solid #ccc;
+        padding: 5px 5px 5px 5px;
+        width: 100%;
+      }
+    .verticalTable td
+    {
+        font-weight: normal;
+        text-align:left;
+    }
+    
+    .verticalTable th
+    {
+        text-align: left;
+        font-weight: bold;
+        width: 200px;
+    }
+        </STYLE>
+       <font face="arial" size="2">
+          <b><p style="text-align:left;font-weight: bold;font-family:Arial;">Order details for the following Opportunity.</p></b>
+<br/>
+          <table class="verticalTable" >
+            <tr > 
+               <th style="font-family:Arial;font-weight: bold; float:left;">Primary Contact Name</th>
+               <td>{!relatedTo.Primary_Contact_Name__c}</td>
+            </tr>
+            <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Primary Contact Location</th>
+               <td>{!relatedTo.Primary_Contact_Location__c}</td>
+            </tr>
+            <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Phone #</th>
+               <td>{!relatedTo.Phone_No__c}</td>
+            </tr>
+            <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;"> Email</th>
+               <td>{!relatedTo.Email__c}</td>
+            </tr> 
+             <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Opportunity #</th>
+               <td>{!relatedTo.Opportunity_c__c}</td>
+            </tr>  
+             <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Distribution Method</th>
+               <td>{!relatedTo.Distribution_Method__c}</td>
+            </tr>  
+             <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Format</th>
+               <td>{!relatedTo.Format__c}</td>
+            </tr> 
+            <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">RPDM included in this Order</th>
+               <td>{!relatedTo.Is_RPDM_included_in_this_Order__c}</td>
+            </tr>  
+             <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Impression</th>
+               <td>{!relatedTo.Impression__c}</td>
+            </tr>  
+             <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Rate</th>
+               <td>{!relatedTo.Rate__c}</td>
+            </tr>  
+            <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Store copy included in this Order</th>
+               <td>{!relatedTo.Is_StoreCopy_Included_in_this_Order__c}</td>
+            </tr>  
+             <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Address</th>
+               <td>{!relatedTo.Address__c}</td>
+            </tr>  
+             <tr>
+               <th style="font-family:Arial;font-weight: bold; float:left;">Quantity</th>
+               <td>{!relatedTo.Quantity__c}</td>
+            </tr>   
+              </table>
+        </font>
+      </body>
+    </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,16 @@
+<apex:page standardController="Financial_Account__c" extensions="VFFileUpload">
+  <apex:form >
+      
+      <apex:pageBlock >
+            <apex:inputField value="{!fa.name}"  />
+            <apex:inputField value="{!fa.Client_Account1__c}"/>
+            <apex:inputField value="{!fa.Client_Account__c}"/>
+            
+       </apex:pageBlock>
+  
+      <apex:pageBlock title="Upload Attachment">
+            <apex:inputFile style="width:100%" id="fileToUpload" value="{!fileBody}" filename="{!fileName}" />
+            <apex:commandButton value="Upload Attachment" action="{!UploadFile}"/>
+       </apex:pageBlock>
+  </apex:form>
+</apex:page>

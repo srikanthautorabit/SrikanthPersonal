@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Cases_in_Vault_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Use Cases in Vault</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Vault_Problem_Statement_2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Create templates that can backup metadata and data with dependencies</fullName>
+                <default>false</default>
+                <label>Create templates that can backup metadata and data with dependencies</label>
+            </value>
+            <value>
+                <fullName>Apply Retention Periods on Backup/Archival</fullName>
+                <default>false</default>
+                <label>Apply Retention Periods on Backup/Archival</label>
+            </value>
+            <value>
+                <fullName>Set up Incremental/Full Backup on Data/Metadata</fullName>
+                <default>false</default>
+                <label>Set up Incremental/Full Backup on Data/Metadata</label>
+            </value>
+            <value>
+                <fullName>Schedule backups that can be run more than once a day</fullName>
+                <default>false</default>
+                <label>Schedule backups that can be run more than once a day</label>
+            </value>
+            <value>
+                <fullName>Backup only specific records important to your organization</fullName>
+                <default>false</default>
+                <label>Backup only specific records important to your organization</label>
+            </value>
+            <value>
+                <fullName>Run an incremental/full backup of your Salesforce Org</fullName>
+                <default>false</default>
+                <label>Run an incremental/full backup of your Salesforce Org</label>
+            </value>
+            <value>
+                <fullName>Optimize API calls during every backup</fullName>
+                <default>false</default>
+                <label>Optimize API calls during every backup</label>
+            </value>
+            <value>
+                <fullName>Exclude Deleted Data in Salesforce from being backed up</fullName>
+                <default>false</default>
+                <label>Exclude Deleted Data in Salesforce from being backed up</label>
+            </value>
+            <value>
+                <fullName>Compare Metadata/Data between two backup snapshots</fullName>
+                <default>false</default>
+                <label>Compare Metadata/Data between two backup snapshots</label>
+            </value>
+            <value>
+                <fullName>Compare Metadata/Data between a backup snapshot and live environment</fullName>
+                <default>false</default>
+                <label>Compare Metadata/Data between a backup snapshot and live environment</label>
+            </value>
+            <value>
+                <fullName>Recover metadata/data selectively from a backup snapshot</fullName>
+                <default>false</default>
+                <label>Recover metadata/data selectively from a backup snapshot</label>
+            </value>
+            <value>
+                <fullName>Recover the entire metadata/data from a backup snapshot</fullName>
+                <default>false</default>
+                <label>Recover the entire metadata/data from a backup snapshot</label>
+            </value>
+            <value>
+                <fullName>Include unlimited hierarchical dependencies of data to be restored</fullName>
+                <default>false</default>
+                <label>Include unlimited hierarchical dependencies of data to be restored</label>
+            </value>
+            <value>
+                <fullName>Seed metadata and data at once from a backup snapshot to a Salesforce environment</fullName>
+                <default>false</default>
+                <label>Seed metadata and data at once from a backup snapshot to a Salesforce environment</label>
+            </value>
+            <value>
+                <fullName>Mask sensitive information prior to your data deployment</fullName>
+                <default>false</default>
+                <label>Mask sensitive information prior to your data deployment</label>
+            </value>
+            <value>
+                <fullName>Migrate data and metadata with dependencies across multiple levels</fullName>
+                <default>false</default>
+                <label>Migrate data and metadata with dependencies across multiple levels</label>
+            </value>
+            <value>
+                <fullName>Backup records into a storage service and also, delete it from Salesforce upon user confirmation</fullName>
+                <default>false</default>
+                <label>Backup records into a storage service and also, delete it from Salesforce upon user confirmation</label>
+            </value>
+            <value>
+                <fullName>Restore records from archives with dependencies</fullName>
+                <default>false</default>
+                <label>Restore records from archives with dependencies</label>
+            </value>
+            <value>
+                <fullName>Set up Alert Rules in Vault to intelligently capture any real-time changes in metadata/data</fullName>
+                <default>false</default>
+                <label>Set up Alert Rules in Vault to intelligently capture any real-time changes in metadata/data</label>
+            </value>
+            <value>
+                <fullName>Input a CSV or collection of record IDs to anonymize records from backup snapshot(s)</fullName>
+                <default>false</default>
+                <label>Input a CSV or collection of record IDs to anonymize records from backup snapshot(s)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Enable backup for both Salesforce metadata and data</controllingFieldValue>
+            <valueName>Create templates that can backup metadata and data with dependencies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enable backup for both Salesforce metadata and data</controllingFieldValue>
+            <valueName>Apply Retention Periods on Backup/Archival</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enable backup for both Salesforce metadata and data</controllingFieldValue>
+            <valueName>Set up Incremental/Full Backup on Data/Metadata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enable backup for both Salesforce metadata and data</controllingFieldValue>
+            <valueName>Schedule backups that can be run more than once a day</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Frequent your &quot;change-only&quot; backups by using an Optimized API approach</controllingFieldValue>
+            <valueName>Backup only specific records important to your organization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Frequent your &quot;change-only&quot; backups by using an Optimized API approach</controllingFieldValue>
+            <valueName>Run an incremental/full backup of your Salesforce Org</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Frequent your &quot;change-only&quot; backups by using an Optimized API approach</controllingFieldValue>
+            <valueName>Optimize API calls during every backup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Frequent your &quot;change-only&quot; backups by using an Optimized API approach</controllingFieldValue>
+            <valueName>Exclude Deleted Data in Salesforce from being backed up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compare either 2 backup snapshots or 1 backup with the live org</controllingFieldValue>
+            <valueName>Compare Metadata/Data between two backup snapshots</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compare either 2 backup snapshots or 1 backup with the live org</controllingFieldValue>
+            <valueName>Compare Metadata/Data between a backup snapshot and live environment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Improve your RTO/RPO by using Vault multi-depth hierarchical restore</controllingFieldValue>
+            <valueName>Recover metadata/data selectively from a backup snapshot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Improve your RTO/RPO by using Vault multi-depth hierarchical restore</controllingFieldValue>
+            <valueName>Recover the entire metadata/data from a backup snapshot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Improve your RTO/RPO by using Vault multi-depth hierarchical restore</controllingFieldValue>
+            <valueName>Include unlimited hierarchical dependencies of data to be restored</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ready your sandboxes for functional testing with data and metadata</controllingFieldValue>
+            <valueName>Seed metadata and data at once from a backup snapshot to a Salesforce environment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ready your sandboxes for functional testing with data and metadata</controllingFieldValue>
+            <valueName>Mask sensitive information prior to your data deployment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ready your sandboxes for functional testing with data and metadata</controllingFieldValue>
+            <valueName>Migrate data and metadata with dependencies across multiple levels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Have your Salesforce environment within data limits with Vault archiving capability</controllingFieldValue>
+            <valueName>Backup records into a storage service and also, delete it from Salesforce upon user confirmation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Have your Salesforce environment within data limits with Vault archiving capability</controllingFieldValue>
+            <valueName>Restore records from archives with dependencies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ensure information in Salesforce is constantly monitored to avoid data integrity issues</controllingFieldValue>
+            <valueName>Set up Alert Rules in Vault to intelligently capture any real-time changes in metadata/data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anonymize records from a backup snapshot by exercising Vault&apos;s GDPR feature</controllingFieldValue>
+            <valueName>Input a CSV or collection of record IDs to anonymize records from backup snapshot(s)</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
